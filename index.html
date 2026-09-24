@@ -1,1 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Esraa Ashraf | AI & Data Science</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav h2 {
+            color: #5b4bdb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #5b4bdb;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f1efff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .hero h1 span {
+            color: #5b4bdb;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 28px;
+            background: #5b4bdb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #4638b5;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 45px;
+            color: #222;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            color: #5b4bdb;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            color: #5b4bdb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background: #f1efff;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #5b4bdb;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Esraa Ashraf</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div>
+            <h1>Hi, I'm <span>Esraa</span> 👋</h1>
+
+            <h2>AI & Data Science Trainee</h2>
+
+            <p>
+                I am an aspiring AI Engineer and Data Science learner
+                interested in Python, data analysis, visualization,
+                and machine learning.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am an AI & Data Science trainee currently developing
+                my skills in Python, data analysis, data visualization,
+                and machine learning.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy working with data, discovering useful insights,
+                and building practical projects while continuously
+                improving my technical skills.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">Seaborn</div>
+            <div class="skill">Plotly</div>
+            <div class="skill">Web Scraping</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Machine Learning</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>🛒 Supermarket Data Analysis</h3>
+
+                <p>
+                    Data cleaning and analysis project using Python
+                    and Pandas to explore supermarket sales data.
+                </p>
+
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🌦️ Weather Data Analysis</h3>
+
+                <p>
+                    Data cleaning and exploratory analysis of
+                    weather data using Python and Pandas.
+                </p>
+
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🩺 Diabetes Data Analysis</h3>
+
+                <p>
+                    Exploratory data analysis project using Python,
+                    Pandas, NumPy, and data visualization techniques.
+                </p>
+
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>📊 Web Scraping & Data Visualization</h3>
+
+                <p>
+                    A beginner data science project involving web
+                    scraping, data cleaning, analysis, and interactive
+                    Plotly visualizations.
+                </p>
+
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Feel free to connect with me and explore my work.
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://github.com/EsraaAshraf20" target="_blank">
+                GitHub
+            </a>
+
+            <a href="#" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="#" target="_blank">
+                Email
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Esraa Ashraf. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
